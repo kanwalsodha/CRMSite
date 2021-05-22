@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Site" %>
+
+<!DOCTYPE html>
+<link href="Styles/StyleSheet.css" rel="stylesheet" />
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Book Check In Check Out</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 69px;
+        }
+        .auto-style2 {
+            width: 300px;
+        }
+    </style>
+</head>
+<body style="align-content:center">
+    <form id="form1" runat="server">
+    <div>
+        <table border="0">
+            
+            <tr>
+                <td style="width:20%" ></td>
+                <td class="Heading" style="width:60%" >
+                    <b>CRM Order Management</b>
+                </td>
+                 <td style="width:20%"></td>
+            </tr>
+            <tr>
+                 <td ></td>
+                <td  > 
+                    
+                    <asp:HyperLink CssClass="text" ID="HomePage" Text="Order Report" NavigateUrl="~/Default.aspx" runat="server"/>&nbsp&nbsp
+                    <asp:HyperLink CssClass="text" ID="ImportXML" Text="Import XML" NavigateUrl="~/XmlParser.aspx" runat="server"/>&nbsp&nbsp
+
+                    <asp:Label ID="lblMessage" runat="server" CssClass="text2" /> </td>
+                 <td></td>
+            </tr>
+        
+            <tr>
+                 <td ></td>
+           <td >
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >  
+        </asp:ContentPlaceHolder>
+
+           </td>
+
+                 <td></td>
+           </tr>     
+        </table>
+    </div>
+    </form>
+</body>
+</html>
+
